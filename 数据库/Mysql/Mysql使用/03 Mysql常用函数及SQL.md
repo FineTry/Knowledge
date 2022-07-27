@@ -46,8 +46,7 @@ select…for update
 ```
 
 
-
-
+2. 行转列
 
 ```sql
 -- 行转列，转为中文
@@ -73,3 +72,20 @@ FROM
 	( SELECT REPLACE ( NAME, ';', ',' ) NAME FROM test ) c
 ```
 
+
+3. 从一个表更新到另一个表，update一个集合
+```sql
+-- 第一种
+UPDATE work w 
+SET w.class_name = (
+	SELECT
+		a.company 
+	FROM
+		( SELECT * FROM work ) a 
+	WHERE
+	a.id = w.id 
+	)
+
+-- 第二种
+update table_1 t1,table_2 t2 set t1.column = t2.column where t1.id = t2.pid;
+```
