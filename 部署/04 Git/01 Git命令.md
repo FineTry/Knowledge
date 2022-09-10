@@ -61,7 +61,7 @@
 
 上一小节介绍完Git的四大工作区域，这一小节呢，介绍Git的工作流程咯，把git的操作命令和几个工作区域结合起来，个人觉得更容易理解一些吧，哈哈，看图：
 
-![图片](https://github.com/FineTry/Picture/upload/DEV/knowledge/01-git-05.png)git 的正向工作流程一般就这样：
+![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-05.png)git 的正向工作流程一般就这样：
 
 - 从远程仓库拉取文件代码回来；
 - 在工作目录，增删改查文件；
