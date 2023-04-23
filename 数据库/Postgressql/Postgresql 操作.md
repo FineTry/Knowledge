@@ -4,13 +4,13 @@
 
 (1)   本机：su postgres;  psql 就可以进入psql超级管理员
 
-![img](https://github.com/FineTry/Picture/raw/DEV/knowledge/clip_image002.jpg)
+![img](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/clip_image002.jpg)
 
 (2)   采用psql控制台连接： 以川大服务器为例，进入postgres数据库，用户名为：postgres，密码：shufeng
 
 ①  psql -h 10.3.0.93 -p 5432 -U postgres -d postgres;
 
-![img](https://github.com/FineTry/Picture/raw/DEV/knowledge/clip_image004.jpg)
+![img](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/clip_image004.jpg)
 
 当我们看到psotgres=#代表我们拥有了超级权限。
 

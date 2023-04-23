@@ -29,7 +29,7 @@
 
 那么，集中化的版本控制系统又是什么呢，说白了，就是有一个集中管理的中央服务器，保存着所有文件的修改历史版本，而协同开发者通过客户端连接到这台服务器，从服务器上同步更新或上传自己的修改。
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-02.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-02.png)
 
 ### 什么是分布式版本控制系统？
 
@@ -39,7 +39,7 @@
 - 用户即使离线也可以本地提交，push推送到远程服务器才需要联网。
 - 每个用户都保存了历史版本，所以只要有一个用户设备没问题，就可以恢复数据啦~
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-03.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-03.png)
 
 ## **Git的相关理论基础**
 
@@ -50,7 +50,7 @@
 
 ### Git的四大工作区域
 
-先复习Git的几个工作区域哈：![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-04.png)
+先复习Git的几个工作区域哈：![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-04.png)
 
 - **Workspace**：你电脑本地看到的文件和目录，在Git的版本控制下，构成了工作区。
 - **Index/Stage**：暂存区，一般存放在 .git目录下，即.git/index,它又叫待提交更新区，用于临时存放你未提交的改动。比如，你执行git add，这些改动就添加到这个区域啦。
@@ -61,7 +61,7 @@
 
 上一小节介绍完Git的四大工作区域，这一小节呢，介绍Git的工作流程咯，把git的操作命令和几个工作区域结合起来，个人觉得更容易理解一些吧，哈哈，看图：
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-05.png)git 的正向工作流程一般就这样：
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-05.png)git 的正向工作流程一般就这样：
 
 - 从远程仓库拉取文件代码回来；
 - 在工作目录，增删改查文件；
@@ -82,7 +82,7 @@
 
 ### 一张图解释Git的工作原理
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-07.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-07.png)
 
 ## **日常开发中，Git的基本常用命令**
 
@@ -96,7 +96,7 @@
 - git pull/git fetch
 - git push
 
-这个图只是模拟一下git基本命令使用的大概流程哈~![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-08.png)
+这个图只是模拟一下git基本命令使用的大概流程哈~![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-08.png)
 
 ### git clone
 
@@ -106,7 +106,7 @@
 git clone url  克隆远程版本库
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-09.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-09.png)
 
 ### git checkout -b dev
 
@@ -118,7 +118,7 @@ git clone url  克隆远程版本库
 git checkout -b dev   创建开发分支dev，并切换到该分支下
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-10.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-10.png)
 
 ### git add
 
@@ -136,7 +136,7 @@ git add [file1]	添加指定文件到暂存区
 git add Hello.java  把HelloWorld.java文件添加到暂存区去
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-11.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-11.png)
 
 ### git commit
 
@@ -154,7 +154,7 @@ git commit --amend -m [message] 使用一次新的commit，替代上一次提交
 git commit -m 'helloworld开发'
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-12.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-12.png)
 
 ### git status
 
@@ -166,7 +166,7 @@ git status -s  查看当前工作区暂存区变动，概要信息
 git status  --show-stash 查询工作区中是否有stash（暂存的文件）
 ```
 
-当你忘记是否已把代码文件添加到暂存区或者是否提交到本地仓库，都可以用git status看看哦~![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-13.png)
+当你忘记是否已把代码文件添加到暂存区或者是否提交到本地仓库，都可以用git status看看哦~![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-13.png)
 
 ### git log
 
@@ -179,7 +179,7 @@ git log -p <file> 查看指定文件的提交历史
 git blame <file> 一列表方式查看指定文件的提交历史
 ```
 
-嘻嘻，看看dev分支上的提交历史吧~要回滚代码就经常用它喵喵提交历史~![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-14.png)
+嘻嘻，看看dev分支上的提交历史吧~要回滚代码就经常用它喵喵提交历史~![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-14.png)
 
 ### git diff
 
@@ -191,7 +191,7 @@ git diff branchName filepath 当前分支的文件与branchName分支的文件�
 git diff commitId filepath 与某一次提交的比较差异
 ```
 
-如果你想对比一下你改了哪些内容，可以用git diff对比一下文件修改差异哦![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-15.png)
+如果你想对比一下你改了哪些内容，可以用git diff对比一下文件修改差异哦![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-15.png)
 
 ### git pull/git fetch
 
@@ -206,7 +206,7 @@ git fetch origin master 拉取远程最新master分支代码
 
 我们一般都会用git pull拉取最新代码看看的，解决一下冲突，再推送代码到远程仓库的。
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-16.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-16.png)
 
 > 有些伙伴可能对使用git pull还是git fetch有点疑惑，其实 git pull = git fetch+ git merge。pull的话，拉取远程分支并与本地分支合并，fetch只是拉远程分支，怎么合并，可以自己再做选择。
 
@@ -220,7 +220,7 @@ git push origin -d <branchname>   删除远程branchname分支
 git push --tags 推送所有标签
 ```
 
-如果我们在dev开发完，或者就想把文件推送到远程仓库，给别的伙伴看看，就可以使用git push origin dev~![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-17.png)
+如果我们在dev开发完，或者就想把文件推送到远程仓库，给别的伙伴看看，就可以使用git push origin dev~![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-17.png)
 
 ## **Git进阶之分支处理**
 
@@ -241,7 +241,7 @@ git checkout -b dev2  新建一个分支，并且切换到新的分支dev2
 git branch dev2 新建一个分支，但是仍停留在原来分支
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-18.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-18.png)
 
 **查看分支：**
 
@@ -251,7 +251,7 @@ git branch -r  查看所有远程的分支
 git branch -a  查看所有远程分支和本地分支
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-19.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-19.png)
 
 **删除分支：**
 
@@ -259,7 +259,7 @@ git branch -a  查看所有远程分支和本地分支
 git branch -D <branchname>  删除本地branchname分支
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-20.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-20.png)
 
 ### git checkout
 
@@ -269,7 +269,7 @@ git branch -D <branchname>  删除本地branchname分支
 git checkout master 切换到master分支
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-21.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-21.png)
 
 ### git merge
 
@@ -281,7 +281,7 @@ git merge --no-ff origin/dev  在当前分支上合并远程分支dev
 git merge --abort 终止本次merge，并回到merge前的状态
 ```
 
-比如，你开发完需求后，发版需要把代码合到主干master分支，如下：![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-22.png)
+比如，你开发完需求后，发版需要把代码合到主干master分支，如下：![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-22.png)
 
 ## **Git进阶之处理冲突**
 
@@ -313,7 +313,7 @@ public class HelloWorld {
 
 再然后呢，我们提交一下master分支的这个改动，并把dev分支合并过下，就出现冲突啦，如图所示：
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-23.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-23.png)
 
 ### Git解决冲突
 
@@ -325,7 +325,7 @@ Git 解决冲突步骤如下：
 
 #### 1.查看冲突文件内容
 
-git merge提示冲突后，我们切换到对应文件，看看冲突内容哈，，如下：![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-24.png)
+git merge提示冲突后，我们切换到对应文件，看看冲突内容哈，，如下：![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-24.png)
 
 #### 2.确定冲突内容保留哪些部分，修改文件
 
@@ -336,13 +336,13 @@ git merge提示冲突后，我们切换到对应文件，看看冲突内容哈�
 
 #### 3.修改完冲突文件内容，我们重新提交，冲突done
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-25.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-25.png)
 
 ## **Git进阶之撤销与回退**
 
 Git的撤销与回退，在日常工作中使用的比较频繁。比如我们想将某个修改后的文件撤销到上一个版本，或者想撤销某次多余的提交，都要用到git的撤销和回退操作。
 
-代码在Git的每个工作区域都是用哪些命令撤销或者回退的呢，如下图所示：![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/git进阶与回退.png)
+代码在Git的每个工作区域都是用哪些命令撤销或者回退的呢，如下图所示：![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/git进阶与回退.png)
 
 有关于Git的撤销与回退，一般就以下几个核心命令
 
@@ -359,7 +359,7 @@ git checkout [file]  丢弃某个文件file
 git checkout .  丢弃所有文件
 ```
 
-以下demo，使用git checkout -- test.txt 撤销了test.txt的修改![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-26.png)
+以下demo，使用git checkout -- test.txt 撤销了test.txt的修改![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-26.png)
 
 ### git reset
 
@@ -371,15 +371,15 @@ git checkout .  丢弃所有文件
 
 > Git的所有提交，会连成一条时间轴线，这就是分支。如果当前分支是master，HEAD指针一般指向当前分支，如下：
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-27.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-27.png)
 
 假设执行git reset，回退到版本二之后，版本三不见了哦,如下：
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-28.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-28.png)
 
 #### git reset的使用
 
-Git Reset的几种使用模式![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-29.png)
+Git Reset的几种使用模式![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-29.png)
 
 ```
 git reset HEAD --file
@@ -396,7 +396,7 @@ git reset HEAD file 取消暂存
 git checkout file 撤销修改
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-30.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-30.png)
 
 再看另外一个粟子吧，代码已经git commit了，但是还没有push：
 
@@ -405,7 +405,7 @@ git log  获取到想要回退的commit_id
 git reset --hard commit_id  想回到过去，回到过去的commit_id
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/gitcommit还未push.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/gitcommit还未push.png)
 
 如果代码已经push到远程仓库了呢，也可以使用reset回滚哦(这里大家可以自己操作实践一下哦)~
 
@@ -419,7 +419,7 @@ git push origin HEAD --force
 
 > 与git reset不同的是，revert复制了那个想要回退到的历史版本，将它加在当前分支的最前端。
 
-**revert之前：**![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-31.png)**revert 之后：**![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-32.png)
+**revert之前：**![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-31.png)**revert 之后：**![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-32.png)
 
 当然，如果代码已经推送到远程的话，还可以考虑revert回滚呢
 
@@ -428,7 +428,7 @@ git log  得到你需要回退一次提交的commit id
 git revert -n <commit_id>  撤销指定的版本，撤销也会作为一次提交进行保存
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-33.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-33.png)
 
 ## **Git进阶之标签tag**
 
@@ -444,7 +444,7 @@ git show [tag] 查看tag
 git checkout -b [branch] [tag] 新建一个分支，指向某个tag
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-34.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-34.png)
 
 ## **Git其他一些经典命令**
 
@@ -489,17 +489,17 @@ git stash drop stash@{num} ：删除一条保存的工作进度
 git stash clear 删除所有缓存的stash。
 ```
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-35.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-35.png)
 
 ### git reflog
 
 显示当前分支的最近几次提交
 
-![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-36.png)
+![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-36.png)
 
 ### git blame filepath
 
-git blame 记录了某个文件的更改历史和更改人，可以查看背锅人，哈哈![图片](https://github.com/FineTry/Picture/raw/DEV/knowledge/01-git-37.png)
+git blame 记录了某个文件的更改历史和更改人，可以查看背锅人，哈哈![图片](https://raw.githubusercontent.com/FineTry/Picture/DEV/knowledge/01-git-37.png)
 
 ### git remote
 
